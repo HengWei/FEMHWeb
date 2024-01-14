@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 function App() {
     return (
         <>            
-            <Container>
+            <Container style={{ paddingTop: 18 }}>                
                 <Row>
                     <Col>過敏免疫風濕科是屬於內科的一個次專科,服務的範圍包括各種急、慢性關節炎,如痛風、類風濕性關節炎、僵直性脊椎炎等；此外一些全身性的免疫疾病,如全身性紅斑狼瘡、休格蘭(或修格連氏病，乾燥症)、硬皮症、多發性肌炎、血管炎，也屬於本科的範圍。</Col>
                 </Row>
@@ -14,13 +14,9 @@ function App() {
                 </Row>
                 <Row>
                     <Col>亞東紀念醫院過敏免疫風濕科提供過敏免疫病人住院服務臨床檢驗科也提供完整、全面的血清學檢查支援。本科成員目前有專任主治醫師兩位，兼任主治醫師兩位,專科護理師一名,為新北市的民眾服務。</Col>
-                </Row>
-            </Container>
+                </Row>                
+            </Container>            
         </>
     )
 }
-
-
-
-
 export default App
