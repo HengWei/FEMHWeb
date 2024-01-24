@@ -7,10 +7,9 @@ import Footer from './Footer'
 import DiseaseIdx from './DiseaseIdx'
 
 import { HashRouter, Route, Routes } from "react-router-dom"
-//import './index.css'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-
+//import './index.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,6 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/disease" element={<DiseaseIdx />} /> 
             </Routes>
         </HashRouter>
-        <Footer />        
+        <Footer />
     </React.StrictMode>
 )
