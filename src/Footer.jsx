@@ -1,5 +1,4 @@
-﻿import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+﻿import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Facebook, Mailbox, ShareFill } from 'react-bootstrap-icons';
@@ -63,8 +62,9 @@ function Footer() {
                     <div className="col-md-4 mb-md-0 mb-4">
                         <h5 className="text-uppercase">外部連結</h5>
                         <ul className="list-unstyled">
-                            <li><a href="#!" >病友花絮</a></li>
-                            <li><a href="#!">Link 2</a></li>                           
+                            <li><a href="https://www.facebook.com/AIR.assn" >病友花絮</a></li>
+                            <li><a href="https://www.femh.org.tw/consult/consult.aspx">院方Q&A</a></li>                           
+                            <li><a href="https://femhsdm.wordpress.com/">醫病共同決策</a></li>
                         </ul>
                     </div>
                 </div>

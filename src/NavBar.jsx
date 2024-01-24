@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -17,9 +16,7 @@ function NavBar() {
                       <Nav.Link href="#link">常見症狀</Nav.Link>
                       <Nav.Link href="/#/disease">常見疾病</Nav.Link>
                       <Nav.Link href="#link2">常見藥物</Nav.Link>
-                      <Nav.Link href="#link3">常見檢驗</Nav.Link>                   
-                      <Nav.Link href="#link5">院方Q&A</Nav.Link>
-                      <Nav.Link href="#link6">醫病共享決策</Nav.Link>                                       
+                      <Nav.Link href="#link3">常見檢驗</Nav.Link> 
                   </Nav>
                   <Form className="d-flex">
                       <Form.Control
