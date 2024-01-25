@@ -5,6 +5,7 @@ import { Facebook, Mailbox, ShareFill } from 'react-bootstrap-icons';
 
 //import GoogleTranslate from './Translat'
 import { useEffect } from 'react';
+import './footer.css'
 
 
 function Footer() {
@@ -53,9 +54,7 @@ function Footer() {
                     <div className="col-md-4 mb-md-0 mb-4">
                         <h5 className="text-uppercase"> 聯絡資訊</h5>
                         <ul className="list-unstyled">
-                            <li><Mailbox size={20} /> swatduck@gmail.com</li>
-                            <li><a href="#!">Link 2</a></li>
-                           
+                            <li><Mailbox size={20} /> swatduck@gmail.com</li>   
                         </ul>
                     </div>
 

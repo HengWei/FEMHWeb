@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "parent": "非類固醇止痛藥(NSAID)",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+
+      ]
+
+    },
+    {
+      "parent": "類固醇",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+
+      ]
+
+    },
+    {
+      "parent": "免疫調節劑",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+
+      ]
+
+    },
+    {
+      "parent": "生物製劑",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+
+      ]
+
+    },
+    {
+      "parent": "小分子標靶藥物",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+
+      ]
+
+    },
+    {
+      "parent": "痛風用藥",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

@@ -8,4 +8,15 @@
     background-color: #6c757d;
 }
 
+li > a {
+    text-decoration-line: none;
+    color: #212529;   
+}
 
+li{
+    margin:10px;
+}
+
+.text-uppercase {
+    font-weight: bold;
+}

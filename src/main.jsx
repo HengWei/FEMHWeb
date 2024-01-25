@@ -5,6 +5,9 @@ import Member from './Member'
 import Navbar from './NavBar'
 import Footer from './Footer'
 import DiseaseIdx from './DiseaseIdx'
+import Symptom from './Symptom'
+import Lab from './Lab'
+import Medication from './MedicationIdx'
 
 import { HashRouter, Route, Routes } from "react-router-dom"
 
@@ -20,6 +23,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/" element={<App />} />
                 <Route path="/member" element={<Member />} />
                 <Route path="/disease" element={<DiseaseIdx />} /> 
+                <Route path="/symptom" element={<Symptom />} /> 
+                <Route path="/lab" element={<Lab />} /> 
+                <Route path="/medication" element={<Medication />} /> 
+
             </Routes>
         </HashRouter>
         <Footer />

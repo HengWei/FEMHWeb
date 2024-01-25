@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "parent": "風濕關節疾病",
+      "childs": [
+        {
+          "title": "痛風",
+          "subTitle": "Gout",
+          "url": ""
+        },
+        {
+          "title": "類風濕性關節炎",
+          "subTitle": "",
+          "url": ""
+        },
+        {
+          "title": "僵直性脊椎炎",
+          "subTitle": "Systemic Lupus",
+          "url": ""
+        }
+      ]
+    }
+
+  ]
+}

@@ -13,10 +13,10 @@ function NavBar() {
               <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                       <Nav.Link href="/#/Member">成員介紹</Nav.Link>
-                      <Nav.Link href="#link">常見症狀</Nav.Link>
+                      <Nav.Link href="/#/symptom">常見症狀</Nav.Link>
                       <Nav.Link href="/#/disease">常見疾病</Nav.Link>
-                      <Nav.Link href="#link2">常見藥物</Nav.Link>
-                      <Nav.Link href="#link3">常見檢驗</Nav.Link> 
+                      <Nav.Link href="/#/medication">常見藥物</Nav.Link>
+                      <Nav.Link href="/#/lab">常見檢驗</Nav.Link> 
                   </Nav>
                   <Form className="d-flex">
                       <Form.Control
@@ -25,7 +25,7 @@ function NavBar() {
                           className="me-2"
                           aria-label="Search"
                       />
-                      <Button>搜尋</Button>
+                      <Button>Search</Button>
                   </Form>
               </Navbar.Collapse>
           </Container>
