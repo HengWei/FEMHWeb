@@ -76,7 +76,6 @@ function DiseaseIdx() {
                 </Row>      
             </Container>
 
-
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>風濕關節疾病</Offcanvas.Title>

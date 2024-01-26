@@ -1,17 +1,16 @@
 {
   "data": [
     {
-      "parent": "非類固醇止痛藥(NSAID)",
-      "url": "",
+      "parent": "非類固醇止痛藥",
+      "sub": "NSAID",
+      "url": "\\Nsaid",
       "child": [
         {
           "title": "",
           "context": "",
           "image": ""
         }
-
       ]
-
     },
     {
       "parent": "類固醇",
@@ -22,9 +21,7 @@
           "context": "",
           "image": ""
         }
-
       ]
-
     },
     {
       "parent": "免疫調節劑",
@@ -67,6 +64,39 @@
     },
     {
       "parent": "痛風用藥",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "parent": "骨鬆症用藥",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "parent": "抗過敏/抗組織胺",
+      "url": "",
+      "child": [
+        {
+          "title": "",
+          "context": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "parent": "肌肉鬆弛劑及其他肌肉酸痛相關用藥",
       "url": "",
       "child": [
         {

@@ -1,4 +1,5 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿/* eslint-disable react-hooks/rules-of-hooks */
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Facebook, Mailbox, ShareFill } from 'react-bootstrap-icons';
@@ -15,8 +16,7 @@ function Footer() {
 
     const googleTranslateElementInit = () => {
         new window.google.translate.TranslateElement({
-            pageLanguage: 'pt'
-            //, layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            pageLanguage: 'pt'          
             , includedLanguages: 'en,zh-CN,pt'
             , autoDisplay: true
             , multilanguagePage: true
@@ -29,6 +29,7 @@ function Footer() {
         document.body.appendChild(addScript);
         window.googleTranslateElementInit = googleTranslateElementInit;
     })
+   
 
     return (
         <footer className="page-footer font-small blue pt-4" style={{ backgroundColor: '#6c757d' }}>
@@ -44,6 +45,10 @@ function Footer() {
                                 <Row>
                                     <Col><Facebook size={25} /></Col>
                                 </Row>
+                                <Row>
+                                    {/*<div id="google_translate_element" />*/}
+                                </Row>
+
                             </Container>
 
                         </h5>                     
@@ -72,26 +77,6 @@ function Footer() {
             <div className="footer-copyright text-center py-3">© {todayYear} 亞東醫院過敏免疫風濕科
             </div>
         </footer>
-
-        //<>
-        //    <Container className="footer" fluid>
-        //        <Row  >
-        //            <Col ms={12}>
-        //                <p>© {todayYear} 亞東醫院過敏免疫風濕科</p>
-        //            </Col>
-        //            <Col ms={12}>
-        //                <p>TEST</p>
-        //            </Col>                    
-
-        //            {/*<Navbar bg="dark" data-bs-theme="dark" expand="lg" >*/}
-        //            {/*    <Container>*/}
-        //            {/*        <Navbar.Brand href="#">© {todayYear} 亞東醫院過敏免疫風濕科</Navbar.Brand>*/}
-        //            {/*    </Container>*/}
-        //            {/*    <div id="google_translate_element" />*/}
-        //            {/*</Navbar>*/}
-        //        </Row>
-        //    </Container>
-        //</>
     );
 }
 

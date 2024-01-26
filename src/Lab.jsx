@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from './lab.json';
 
-
 function Lab() {
     //加載症狀JSON
     let itemAccordion = [];
@@ -20,19 +19,18 @@ function Lab() {
         )
     });
 
-    //加載QueryString    
-
     return (
-        <Container style={{ minHeight: 800 }} className="mt-4 mb-5" >
+        <Container style={{ minHeight: 750 }} className="mt-4 mb-5" >
             <Row>
                 <Col>
                     <h2>常見檢驗</h2>
                 </Col>
-            </Row>            
+            </Row>
             <Row className="mt-3">
-                <Accordion defaultActiveKey="-1">
-                    {itemAccordion}
+                <Accordion defaultActiveKey="3" >
+                    {itemAccordion}                    
                 </Accordion>
+
             </Row>
         </Container>
     )
