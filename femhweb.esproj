@@ -11,6 +11,7 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="public\images\medication\" />
     <Folder Include="src\medication\" />
     <Folder Include="src\disease\" />
   </ItemGroup>

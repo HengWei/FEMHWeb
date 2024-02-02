@@ -6,74 +6,71 @@ import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ListGroup from 'react-bootstrap/ListGroup';
+import data from './Disease.json';
 
 function DiseaseIdx() {
 
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);  
+
+    function handleShow(id)
+    {
+        //let offItem = [];
+
+        //console.log(id);
+
+       
+
+        //data.data.map((item) => {
+        //    itemCard.push(
+        //        <Col style={{ paddingTop: 15 }} xs={12} md={4}>
+        //            <Card >
+        //                <Card.Body>
+        //                    <Card.Title>{item.parent}</Card.Title>
+        //                    <Card.Subtitle className="mb-2 text-muted">{item.sub}</Card.Subtitle>
+        //                    <Card.Text>
+        //                    </Card.Text>
+        //                    <Button variant="primary" onClick={handleShow}>詳細</Button>
+        //                </Card.Body>
+        //            </Card>
+        //        </Col>
+        //    );
+        //});
+
+        setShow(true);
+
+        //return offItem;
+    }
+
+    let itemCard = [];
+
+    data.data.map((item) => {
+        itemCard.push(
+            <Col style={{ paddingTop: 15 }} xs={12} md={4}>
+                <Card >
+                    <Card.Body>
+                        <Card.Title>{item.parent}</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">{item.sub}</Card.Subtitle>
+                        <Card.Text>
+                        </Card.Text>
+                        <Button variant="primary" onClick={handleShow}>詳細</Button>
+                    </Card.Body>
+                </Card>
+            </Col>
+        );
+    });
+
+    //let newData = data.filter((item) => { return item.id.include(1) });
+
+    //console.log(newData);
+
 
     return (
         <>
             <Container style={{ minHeight: 800, paddingTop: 20 }} >
                 <Row>
-                    <Col style={{ paddingTop: 18 }} xs={12} md={4}>
-                        <Card >
-                            <Card.Body>
-                                <Card.Title>風濕關節疾病</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">我是描述</Card.Subtitle>
-                                <Card.Text>                                    
-                                </Card.Text>
-                                <Button variant="primary" onClick={handleShow}>詳細</Button>                                
-                            </Card.Body>
-                        </Card>                        
-                    </Col>      
-                    <Col style={{ paddingTop: 18 }} xs={12} md={4}>
-                        <Card >                            
-                            <Card.Body>
-                                <Card.Title>全身性免疫疾病</Card.Title>
-                                <Card.Text>
-                                    <Button variant="primary">詳細</Button>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>     
-                    <Col style={{ paddingTop: 18 }} xs={12} md={4}>
-                        <Card >
-                            
-                            <Card.Body>
-                                <Card.Title>血管炎</Card.Title>
-                                <Card.Text>
-                                    <Button variant="primary">詳細</Button>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>     
-                </Row>      
-                <Row>
-                    <Col style={{ paddingTop: 18 }} xs={12} md={4}>
-                        <Card >
-                            
-                            <Card.Body>
-                                <Card.Title>一些可能與免疫風濕疾病相關的症候群</Card.Title>
-                                <Card.Text>
-                                    <Button variant="primary">詳細</Button>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col style={{ paddingTop: 18 }} xs={12} md={4}>
-                        <Card >
-                           
-                            <Card.Body>
-                                <Card.Title>過敏疾病</Card.Title>
-                                <Card.Text>
-                                    <Button variant="primary">前往頁面</Button>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>                    
-                </Row>      
+                    {itemCard}
+                </Row>
             </Container>
 
             <Offcanvas show={show} onHide={handleClose}>
@@ -94,6 +91,8 @@ function DiseaseIdx() {
                     </ListGroup>
                 </Offcanvas.Body>
             </Offcanvas>
+
+            
         </>
     );
 }
