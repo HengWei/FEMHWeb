@@ -1,4 +1,5 @@
-﻿import Container from 'react-bootstrap/Container';
+﻿
+import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,38 +9,55 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import ListGroup from 'react-bootstrap/ListGroup';
 import data from './Disease.json';
 
+function renderList(id) {
+
+    const filteredData = data.data.find((item) => { return item.id === id; });
+
+    console.log(filteredData);
+
+    let itemList = [];
+
+    
+    filteredData.childs.map((item) => {
+        itemList.push(
+            <ListGroup.Item action href={item.url}>
+                {item.title}
+            </ListGroup.Item>
+        );
+    });
+
+    return (
+        <>
+            <Offcanvas.Header closeButton>
+                <Offcanvas.Title>{filteredData.parent}</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+                <ListGroup >
+                    { itemList }
+                </ListGroup>
+            </Offcanvas.Body>
+        </>
+
+    );
+}
+
+
 function DiseaseIdx() {
 
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);  
+    //const [itemData, setItemData] = useState(data.data);
 
-    function handleShow(id)
-    {
-        //let offItem = [];
+    const handleClose = () => setShow(false);
 
-        //console.log(id);
+    function handleShow(e) {
 
-       
+        e.preventDefault();
 
-        //data.data.map((item) => {
-        //    itemCard.push(
-        //        <Col style={{ paddingTop: 15 }} xs={12} md={4}>
-        //            <Card >
-        //                <Card.Body>
-        //                    <Card.Title>{item.parent}</Card.Title>
-        //                    <Card.Subtitle className="mb-2 text-muted">{item.sub}</Card.Subtitle>
-        //                    <Card.Text>
-        //                    </Card.Text>
-        //                    <Button variant="primary" onClick={handleShow}>詳細</Button>
-        //                </Card.Body>
-        //            </Card>
-        //        </Col>
-        //    );
-        //});
+        console.log("SHOW");
+
+        renderList(2);
 
         setShow(true);
-
-        //return offItem;
     }
 
     let itemCard = [];
@@ -60,11 +78,6 @@ function DiseaseIdx() {
         );
     });
 
-    //let newData = data.filter((item) => { return item.id.include(1) });
-
-    //console.log(newData);
-
-
     return (
         <>
             <Container style={{ minHeight: 800, paddingTop: 20 }} >
@@ -74,28 +87,13 @@ function DiseaseIdx() {
             </Container>
 
             <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>風濕關節疾病</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <ListGroup >
-                        <ListGroup.Item action href="/#/member">
-                            痛風
-                        </ListGroup.Item>
-                        <ListGroup.Item action href="#link2">
-                            Link 2
-                        </ListGroup.Item>
-                        <ListGroup.Item action >
-                            This one is a button
-                        </ListGroup.Item>
-                    </ListGroup>
-                </Offcanvas.Body>
+                {renderList(1)}
             </Offcanvas>
-
-            
         </>
     );
 }
+
+
 
 
 export default DiseaseIdx;

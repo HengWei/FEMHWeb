@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { useCookies } from 'react-cookie';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
+import { Search } from 'react-bootstrap-icons';
 
 function NavBar() {
 
@@ -13,7 +14,8 @@ function NavBar() {
     const [cookies, setCookie] = useCookies(['allowCookie']);   
 
     //彈跳視窗
-    const [show, setShow] = useState(!cookies.allowCookie);    
+    //const [show, setShow] = useState(!cookies.allowCookie);
+    const [show, setShow] = useState(false);    
 
     //同意按鈕
     function onAgreeClick() {
@@ -47,7 +49,8 @@ function NavBar() {
                                 className="me-2"
                                 aria-label="Search"
                             />
-                            <Button>Search</Button>
+                            <Button><Search size={ 22 }></Search></Button>
+                            
                         </Form>
                     </Navbar.Collapse>
                 </Container>
