@@ -17,7 +17,32 @@
         },
         {
           "title": "僵直性脊椎炎",
-          "subTitle": "Systemic Lupus",
+          "subTitle": "Ankylosing spondylitis",
+          "url": ""
+        },
+        {
+          "title": "退化性關節炎/骨性關節炎/骨刺",
+          "subTitle": "osteoarthritis",
+          "url": ""
+        },
+        {
+          "title": "感染性關節炎",
+          "subTitle": "Septic arthritis",
+          "url": ""
+        },
+        {
+          "title": "乾癬性關節炎",
+          "subTitle": "Psoriatic arthritis",
+          "url": ""
+        },
+        {
+          "title": "陣發性風濕症/遊走性關節炎",
+          "subTitle": "Palidromic rheumatism",
+          "url": ""
+        },
+        {
+          "title": "成人史迪爾氏病/成人幼年型關節炎",
+          "subTitle": "Adult onset Still\\'s disease",
           "url": ""
         }
       ]
@@ -28,18 +53,33 @@
       "subTitile": "",
       "childs": [
         {
-          "title": "痛風",
-          "subTitle": "Gout",
+          "title": "全身性紅斑狼瘡",
+          "subTitle": "Systemic lupus erythematosus",
           "url": ""
         },
         {
-          "title": "類風濕性關節炎",
-          "subTitle": "",
+          "title": "修格蘭氏病/修格連氏病/乾燥症",
+          "subTitle": "Sjogren\\'s sydrome",
           "url": ""
         },
         {
-          "title": "僵直性脊椎炎",
-          "subTitle": "Systemic Lupus",
+          "title": "硬皮症",
+          "subTitle": "Scleroderma",
+          "url": ""
+        },
+        {
+          "title": "多發性肌炎與皮肌炎",
+          "subTitle": "Polymyositis and dermatomyositis",
+          "url": ""
+        },
+        {
+          "title": "混合型結締組織疾病",
+          "subTitle": "mixed connetive tissue disease/MCTD",
+          "url": ""
+        },
+        {
+          "title": "抗磷脂抗體症候群",
+          "subTitle": "antiphospholipid syndrome",
           "url": ""
         }
       ]
@@ -50,18 +90,58 @@
       "subTitile": "",
       "childs": [
         {
-          "title": "痛風",
-          "subTitle": "Gout",
+          "title": "血管炎",
+          "subTitle": "Vasculitis",
           "url": ""
         },
         {
-          "title": "類風濕性關節炎",
-          "subTitle": "",
+          "title": "颞動脈炎",
+          "subTitle": "Temporal arteritis",
           "url": ""
         },
         {
-          "title": "僵直性脊椎炎",
-          "subTitle": "Systemic Lupus",
+          "title": "高安氏血管炎",
+          "subTitle": "Takayasu arteritis",
+          "url": ""
+        },
+        {
+          "title": "肉芽腫性多血管炎/韋格納氏肉芽腫",
+          "subTitle": "Granulomatosis with polyangiitis/Wegner\\'s granulomatosis",
+          "url": ""
+        },
+        {
+          "title": "顯微性多血管炎",
+          "subTitle": "Microscopic polyangiitis",
+          "url": ""
+        },
+        {
+          "title": "過敏性肉芽腫",
+          "subTitle": "Churg-Strauss syndrome",
+          "url": ""
+        },
+        {
+          "title": "節結性多動脈硬化",
+          "subTitle": "Polyarteritis nodosum",
+          "url": ""
+        },
+        {
+          "title": "貝賽特氏病/貝雪氏病",
+          "subTitle": "Behcet\\'s disease",
+          "url": ""
+        },
+        {
+          "title": "過敏性紫斑症",
+          "subTitle": "Henoch-Scholein purpura",
+          "url": ""
+        },
+        {
+          "title": "Burger\\'s disease",
+          "subTitle": "thromboangiitis obliterans",
+          "url": ""
+        },
+        {
+          "title": "冷凝蛋白血症",
+          "subTitle": "Cryoglobulinemia",
           "url": ""
         }
       ]
@@ -72,18 +152,43 @@
       "subTitile": "",
       "childs": [
         {
-          "title": "痛風",
-          "subTitle": "Gout",
+          "title": "纖維肌痛",
+          "subTitle": "Myofascial pain syndrome",
           "url": ""
         },
         {
-          "title": "類風濕性關節炎",
-          "subTitle": "",
+          "title": "骨質疏鬆",
+          "subTitle": "Osteoporosis",
           "url": ""
         },
         {
-          "title": "僵直性脊椎炎",
-          "subTitle": "Systemic Lupus",
+          "title": "紅斑節結/結節性紅斑",
+          "subTitle": "erythema nodosum",
+          "url": ""
+        },
+        {
+          "title": "肺動脈高血壓",
+          "subTitle": "autoimmune disease associated pulmonary artery hypertension",
+          "url": ""
+        },
+        {
+          "title": "間質性肺疾病",
+          "subTitle": "interstitial lung disease/ILD",
+          "url": ""
+        },
+        {
+          "title": "間質性膀胱炎",
+          "subTitle": "autoimmune hepatitis",
+          "url": ""
+        },
+        {
+          "title": "風濕性多發肌炎",
+          "subTitle": "polymyalgia rheumatica",
+          "url": ""
+        },
+        {
+          "title": "多發性風濕肌痛",
+          "subTitle": "Polymyalgia rheumatica",
           "url": ""
         }
       ]
@@ -94,18 +199,28 @@
       "subTitile": "",
       "childs": [
         {
-          "title": "痛風",
-          "subTitle": "Gout",
+          "title": "過敏性鼻炎",
+          "subTitle": "Allergic rhinitis",
           "url": ""
         },
         {
-          "title": "類風濕性關節炎",
+          "title": "氣喘",
+          "subTitle": "Asthma",
+          "url": ""
+        },
+        {
+          "title": "藥物過敏及不良反應",
+          "subTitle": "Drug allergy/adverse drug reaction",
+          "url": ""
+        },
+        {
+          "title": "史蒂芬強生症候群",
+          "subTitle": "Steven-Johnson syndrome",
+          "url": ""
+        },
+        {
+          "title": "急慢性蕁麻疹",
           "subTitle": "",
-          "url": ""
-        },
-        {
-          "title": "僵直性脊椎炎",
-          "subTitle": "Systemic Lupus",
           "url": ""
         }
       ]

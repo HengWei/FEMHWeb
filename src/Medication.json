@@ -1,14 +1,45 @@
 {
   "data": [
     {
+      "id": 1,
       "parent": "非類固醇止痛藥",
       "sub": "NSAID",
-      "url": "\\Nsaid",
+      "url": "/Nsaid",
       "child": [
         {
-          "title": "",
+          "title": "Acemet",
           "context": "",
-          "image": ""
+          "image": "./public/images/medication/acemet.jpg"
+        },
+        {
+          "title": "Cataflam",
+          "context": "",
+          "image": "./public/images/medication/cataflam.jpg"
+        },
+        {
+          "title": "Diclofenac SR",
+          "context": "",
+          "image": "./public/images/medication/diclofenac_SR.jpg"
+        },
+        {
+          "title": "Ponstan",
+          "context": "",
+          "image": "./public/images/medication/ponstan.jpg"
+        },
+        {
+          "title": "Sulindac",
+          "context": "",
+          "image": "./public/images/medication/Sulindac.jpg"
+        },
+        {
+          "title": "Celebrex/希樂保",
+          "context": "",
+          "image": "./public/images/medication/celebrex.jpg"
+        },
+        {
+          "title": "Mobic/骨敏捷",
+          "context": "",
+          "image": "./public/images/medication/Mobic.jpg"
         }
       ]
     },

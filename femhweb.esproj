@@ -14,5 +14,6 @@
     <Folder Include="public\images\medication\" />
     <Folder Include="src\medication\" />
     <Folder Include="src\disease\" />
+    <Folder Include="src\disease\" />
   </ItemGroup>
 </Project>
