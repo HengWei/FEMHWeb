@@ -9,11 +9,9 @@ import Symptom from './Symptom'
 import Lab from './Lab'
 import Medication from './MedicationIdx'
 import Nsaid from './Medication/Nsaid'
-
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import './index.css'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

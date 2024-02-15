@@ -1,13 +1,53 @@
 ﻿import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel';
 
 import './App.css'
 
 function App() {
     return (
-        <>            
-            <Container style={{minHeight:800}}>                 
+        <>     
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="./public/images/pngtree-old-man-sitting-alone-outdoors-with-head-pain-rubbing-illness-discomfort-picture-image_1533954.jpg"
+                        alt="First slide"
+                        height="500"
+                    />
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="./public/images/pngtree-old-man-sitting-alone-outdoors-with-head-pain-rubbing-illness-discomfort-picture-image_1533954.jpg"
+                        alt="First slide"
+                        
+                    />
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="./public/images/pngtree-old-man-sitting-alone-outdoors-with-head-pain-rubbing-illness-discomfort-picture-image_1533954.jpg"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+            <Container className = "pt-4" style={{minHeight:300}}>                 
                 <Row>
                     <Col>過敏免疫風濕科是屬於內科的一個次專科,服務的範圍包括各種急、慢性關節炎,如痛風、類風濕性關節炎、僵直性脊椎炎等；此外一些全身性的免疫疾病,如全身性紅斑狼瘡、休格蘭(或修格連氏病，乾燥症)、硬皮症、多發性肌炎、血管炎，也屬於本科的範圍。</Col>
                 </Row>
