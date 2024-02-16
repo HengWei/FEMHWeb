@@ -11,8 +11,8 @@ function MedicationIdx() {
 
     data.data.map((item) => { 
         itemCard.push(
-            <Col style={{ paddingTop:15 }} xs={12} md={4}>
-                <Card >
+            <Col style={{ paddingTop: 15 }} xs={12} md={4}>
+                <Card>
                     <Card.Body>
                         <Card.Title>{item.parent}</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">{item.sub}</Card.Subtitle>
