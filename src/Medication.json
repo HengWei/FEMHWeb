@@ -1,49 +1,6 @@
 {
   "data": [
     {
-      "id": 1,
-      "parent": "非類固醇止痛藥",
-      "sub": "NSAID",
-      "url": "/Nsaid",
-      "child": [
-        {
-          "title": "Acemet",
-          "context": "",
-          "image": "./public/images/medication/acemet.jpg"
-        },
-        {
-          "title": "Cataflam",
-          "context": "",
-          "image": "./public/images/medication/cataflam.jpg"
-        },
-        {
-          "title": "Diclofenac SR",
-          "context": "",
-          "image": "./public/images/medication/diclofenac_SR.jpg"
-        },
-        {
-          "title": "Ponstan",
-          "context": "",
-          "image": "./public/images/medication/ponstan.jpg"
-        },
-        {
-          "title": "Sulindac",
-          "context": "",
-          "image": "./public/images/medication/Sulindac.jpg"
-        },
-        {
-          "title": "Celebrex/希樂保",
-          "context": "",
-          "image": "./public/images/medication/celebrex.jpg"
-        },
-        {
-          "title": "Mobic/骨敏捷",
-          "context": "",
-          "image": "./public/images/medication/Mobic.jpg"
-        }
-      ]
-    },
-    {
       "id": 2,
       "parent": "類固醇",
       "url": "/Steroid",
@@ -58,6 +15,49 @@
           "title": "臨得隆錠/Rinderon",
           "context": "",
           "image": "./public/images/medication/Rinderon.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parent": "生物製劑",
+      "sub": "此類製劑通常是仿效生物分子或針對生物分子作用設計，對於一些傳統用藥無效的風濕病人有很好的效果。因為通常是大分子的蛋白質物質，因此合成困難價格昂貴。因為是大分子物質，不經過肝臟、腎臟代謝，因此代謝性的副作用較小。但是因為對免疫力有影響，因此使用時需注意避免感染。",
+      "url": "/Biologicalagents",
+      "child": [
+        {
+          "title": "Actemra/安挺樂 (tocilizumab)",
+          "context": "一種生物製劑(介白素六受器抗體，IL-6R antibody)，原理為阻斷介白素六(一種發炎介質)，目前是類風濕性關節炎生物製劑第二線用藥，需健保事前審查申請。",
+          "image": "./public/images/medication/actrmra.jpg"
+        },
+        {
+          "title": "Enbrel/恩博(etanercept)",
+          "context": "一種生物製劑，原理為對抗腫瘤壞死因子TNF-α(一種發炎介質)，需健保事前審查申請。目前健保適應症包括類風濕性關節炎、 乾癬、乾癬性關節炎、僵直性脊椎炎、幼年型風濕關節炎。",
+          "image": "./public/images/medication/enbrel.png"
+        },
+        {
+          "title": "Humira/復邁(adalimumab)",
+          "context": "一種生物製劑，原理為對抗腫瘤壞死因子TNF-α(一種發炎介質)，需健保事前審查申請。目前健保適應症包括類風濕性關節炎、 僵直性脊椎炎、乾癬、乾癬性關節炎、僵直性脊椎炎、克隆氏病。",
+          "image": "./public/images/medication/humira.png"
+        },
+        {
+          "title": "Orencia/恩瑞舒(abatacept)",
+          "context": "一種生物製劑，原理為干擾T細胞與抗原呈現細胞交互作用(CTLA4/Fc chimeric )，目前是健保適應症為類風濕性關節炎的第一線用藥 ，需健保事前審查申請。",
+          "image": "./public/images/medication/orencia.png"
+        },
+        {
+          "title": "Rituximab，莫須瘤",
+          "context": "一種生物製劑，原理是對抗B細胞CD20分子，需健保事前審查申請，目前健保免疫疾病適應為類風濕性關節炎 第二線用以及ANCA相關血管炎的GPA，MPA，有危及生命的肺出血，腎衰竭，傳統治療失敗或復發使用。",
+          "image": "./public/images/medication/mabthera.png"
+        },
+        {
+          "title": "Simponi/欣普尼(golimumab)",
+          "context": "一種生物製劑，原理為對抗腫瘤壞死因子TNF-α(一種發炎介質)，需健保事前審查申請。目前健保適應症包括類風濕性關節炎、 乾癬、乾癬性關節炎、僵直性脊椎炎。",
+          "image": "./public/images/medication/simponi.png"
+        },
+        {
+          "title": "Cosentyx",
+          "context": "",
+          "image": "./public/images/medication/Cosentyx.jpg"
         }
       ]
     },
@@ -125,54 +125,52 @@
       ]
     },
     {
-      "id": 4,
-      "parent": "生物製劑",
-      "sub": "此類製劑通常是仿效生物分子或針對生物分子作用設計，對於一些傳統用藥無效的風濕病人有很好的效果。因為通常是大分子的蛋白質物質，因此合成困難價格昂貴。因為是大分子物質，不經過肝臟、腎臟代謝，因此代謝性的副作用較小。但是因為對免疫力有影響，因此使用時需注意避免感染。",
-      "url": "/Biologicalagents",
+      "id": 1,
+      "parent": "非類固醇止痛藥",
+      "sub": "NSAID",
+      "url": "/Nsaid",
       "child": [
         {
-          "title": "Actemra/安挺樂 (tocilizumab)",
-          "context": "一種生物製劑(介白素六受器抗體，IL-6R antibody)，原理為阻斷介白素六(一種發炎介質)，目前是類風濕性關節炎生物製劑第二線用藥，需健保事前審查申請。",
-          "image": "./public/images/medication/actrmra.jpg"
-        },
-        {
-          "title": "Enbrel/恩博(etanercept)",
-          "context": "一種生物製劑，原理為對抗腫瘤壞死因子TNF-α(一種發炎介質)，需健保事前審查申請。目前健保適應症包括類風濕性關節炎、 乾癬、乾癬性關節炎、僵直性脊椎炎、幼年型風濕關節炎。",
-          "image": "./public/images/medication/enbrel.png"
-        },
-        {
-          "title": "Humira/復邁(adalimumab)",
-          "context": "一種生物製劑，原理為對抗腫瘤壞死因子TNF-α(一種發炎介質)，需健保事前審查申請。目前健保適應症包括類風濕性關節炎、 僵直性脊椎炎、乾癬、乾癬性關節炎、僵直性脊椎炎、克隆氏病。",
-          "image": "./public/images/medication/humira.png"
-        },
-        {
-          "title": "Orencia/恩瑞舒(abatacept)",
-          "context": "一種生物製劑，原理為干擾T細胞與抗原呈現細胞交互作用(CTLA4/Fc chimeric )，目前是健保適應症為類風濕性關節炎的第一線用藥 ，需健保事前審查申請。",
-          "image": "./public/images/medication/orencia.png"
-        },
-        {
-          "title": "Rituximab，莫須瘤",
-          "context": "一種生物製劑，原理是對抗B細胞CD20分子，需健保事前審查申請，目前健保免疫疾病適應為類風濕性關節炎 第二線用以及ANCA相關血管炎的GPA，MPA，有危及生命的肺出血，腎衰竭，傳統治療失敗或復發使用。",
-          "image": "./public/images/medication/mabthera.png"
-        },
-        {
-          "title": "Simponi/欣普尼(golimumab)",
-          "context": "一種生物製劑，原理為對抗腫瘤壞死因子TNF-α(一種發炎介質)，需健保事前審查申請。目前健保適應症包括類風濕性關節炎、 乾癬、乾癬性關節炎、僵直性脊椎炎。",
-          "image": "./public/images/medication/simponi.png"
-        },
-        {
-          "title": "Cosentyx",
+          "title": "Acemet",
           "context": "",
-          "image": "./public/images/medication/Cosentyx.jpg"
+          "image": "./public/images/medication/acemet.jpg"
+        },
+        {
+          "title": "Cataflam",
+          "context": "",
+          "image": "./public/images/medication/cataflam.jpg"
+        },
+        {
+          "title": "Diclofenac SR",
+          "context": "",
+          "image": "./public/images/medication/diclofenac_SR.jpg"
+        },
+        {
+          "title": "Ponstan",
+          "context": "",
+          "image": "./public/images/medication/ponstan.jpg"
+        },
+        {
+          "title": "Sulindac",
+          "context": "",
+          "image": "./public/images/medication/Sulindac.jpg"
+        },
+        {
+          "title": "Celebrex/希樂保",
+          "context": "",
+          "image": "./public/images/medication/celebrex.jpg"
+        },
+        {
+          "title": "Mobic/骨敏捷",
+          "context": "",
+          "image": "./public/images/medication/Mobic.jpg"
         }
-
       ]
-
     },
     {
       "id": 5,
       "parent": "小分子標靶藥物",
-      "url": "",
+      "url": "/Moleculetargetdrug",
       "child": [
         {
           "title": "Tofacitinib (捷抑炎)",
@@ -191,7 +189,7 @@
     {
       "id": 6,
       "parent": "痛風用藥",
-      "url": "",
+      "url": "/Goutmedicine",
       "child": [
         {
           "title": "Allopurinol(欣律錠)",
@@ -218,7 +216,7 @@
     {
       "id": 7,
       "parent": "骨鬆症用藥",
-      "url": "",
+      "url": "/M-Osteoporosis",
       "child": [
         {
           "title": "Evista，鈣穩",
@@ -245,19 +243,50 @@
     {
       "id": 8,
       "parent": "抗過敏/抗組織胺",
-      "url": "",
+      "url": "/Antiallergy",
       "child": [
         {
-          "title": "",
-          "context": "",
-          "image": ""
+          "title": "CTM，縮水蘋果酸氯菲尼拉明錠",
+          "context": "舊型",
+          "image": "./public/images/medication/CTM.jpg"
+        },
+        {
+          "title": "Periactin，安清敏錠",
+          "context": "舊型",
+          "image": "./public/images/medication/Periactin.jpg"
+        },
+        {
+          "title": "Vistaril，維泰寧膠囊",
+          "context": "舊型",
+          "image": "./public/images/medication/Periactin.jpg"
+        },
+        {
+          "title": "Vistaril，維泰寧膠囊",
+          "context": "舊型",
+          "image": "./public/images/medication/Vistaril.jpg"
+        },
+        {
+          "title": "Allegra，艾來錠",
+          "context": "新型",
+          "image": "./public/images/medication/allegra.jpg"
+        },
+        {
+          "title": "Clarityne，樂敏定錠",
+          "context": "新型",
+          "image": "./public/images/medication/Clarityne.jpg"
+        },
+        {
+          "title": "Xyzal，驅異樂",
+          "context": "新型",
+          "image": "./public/images/medication/Xyzal.jpg"
         }
+
       ]
     },
     {
       "id": 9,
       "parent": "肌肉鬆弛劑及其他肌肉酸痛相關用藥",
-      "url": "",
+      "url": "/Musclerelaxant",
       "child": [
         {
           "title": "Bafen，倍鬆錠",
