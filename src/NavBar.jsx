@@ -8,14 +8,16 @@ import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import { Search } from 'react-bootstrap-icons';
 
+
 function NavBar() {
 
     //Cookie
-    const [cookies, setCookie] = useCookies(['allowCookie']);   
+    const [cookies, setCookie] = useCookies(['allowCookie']);
 
     //彈跳視窗
     //const [show, setShow] = useState(!cookies.allowCookie);
-    const [show, setShow] = useState(false);    
+    const [show, setShow] = useState(false);
+    const [queryUrl, setqueryUrl] = useState();
 
     //同意按鈕
     function onAgreeClick() {
@@ -27,6 +29,13 @@ function NavBar() {
     function onDisafreeClick() {
         setShow(false);
     }
+
+    //搜尋網址
+    function searchPage(q) {
+        const url = "/Search?q=";
+        setqueryUrl(url.concat(q));
+    }
+
 
     return (
         <>
@@ -48,9 +57,9 @@ function NavBar() {
                                 placeholder="搜尋"
                                 className="me-2"
                                 aria-label="Search"
+                                onChange={(e) => { searchPage(e.target.value); }}
                             />
-                            <Button><Search size={ 22 }></Search></Button>
-                            
+                            <Button href={queryUrl} ><Search size={22}></Search></Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
