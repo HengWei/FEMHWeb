@@ -10,7 +10,7 @@ function Member() {
             <Row>
                 <Col style={{ paddingTop: 18 }}  xs={12} md={4}>
                     <Card>
-                        <Card.Img variant="top" src="./public/images/member/DrWu.jfif" />
+                        <Card.Img variant="top" src="/images/member/DrWu.jfif" />
                         <Card.Body>
                             <Card.Title>吳建陞 醫師</Card.Title>
                             <Card.Text>
@@ -35,7 +35,7 @@ function Member() {
                 </Col>
                 <Col style={{ paddingTop: 18 }} xs={12} md={4}>
                     <Card>
-                        <Card.Img variant="top" src="./public/images/member/DrYin.jfif" />
+                        <Card.Img variant="top" src="/images/member/DrYin.jfif" />
                         <Card.Body>
                             <Card.Title>殷光達 醫師</Card.Title>
                             <Card.Text>
@@ -58,7 +58,7 @@ function Member() {
                 </Col>
                 <Col style={{ paddingTop: 18 }} xs={12} md={4}>
                     <Card >
-                        <Card.Img variant="top" src="./public/images/member/DrChang.jpg" />
+                        <Card.Img variant="top" src="/images/member/DrChang.jpg" />
                         <Card.Body>
                             <Card.Title>張婷惠 醫師</Card.Title>
                             <Card.Text>
@@ -82,7 +82,7 @@ function Member() {
             <Row>
                 <Col style={{ paddingTop: 18 }} xs={12} md={4}>
                     <Card >
-                        <Card.Img variant="top" src="./public/images/member/DrYang.jpg" />
+                        <Card.Img variant="top" src="/images/member/DrYang.jpg" />
                         <Card.Body>
                             <Card.Title>楊春晨 醫師</Card.Title>
                             <Card.Text>
@@ -105,7 +105,7 @@ function Member() {
                 </Col>
                 <Col style={{ paddingTop: 18 }} xs={12} md={4}>
                     <Card >
-                        <Card.Img variant="top" src="./public/images/member/user.png" />
+                        <Card.Img variant="top" src="/images/member/user.png" />
                         <Card.Body>
                             <Card.Title>簡美雯 護理師</Card.Title>
                             <Card.Text>

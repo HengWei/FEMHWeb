@@ -12,8 +12,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="public\images\medication\" />
-    <Folder Include="src\medication\" />
     <Folder Include="src\disease\" />
     <Folder Include="src\disease\" />
   </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties src_4medication_1json__JsonSchema="https://api.airplane.dev/v0/schemas/task.json" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

@@ -25,25 +25,21 @@ import Goutmedicine from './Medication/Goutmedicine'
 import MOsteoporosis from './Medication/M-Osteoporosis'
 import Antiallergy from './Medication/Antiallergy'
 import Musclerelaxant from './Medication/Musclerelaxant'
-
-
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import {  HashRouter, Route, Routes } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <Navbar />
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/member" element={<Member />} />
-                <Route path="/disease" element={<DiseaseIdx />} /> 
-                <Route path="/symptom" element={<Symptom />} /> 
-                <Route path="/lab" element={<Lab />} /> 
-                <Route path="/medication" element={<Medication />} /> 
+                <Route path="/disease" element={<DiseaseIdx />} />
+                <Route path="/symptom" element={<Symptom />} />
+                <Route path="/lab" element={<Lab />} />
+                <Route path="/medication" element={<Medication />} />
                 <Route path="/Nsaid" element={<Nsaid />} />
                 <Route path="/Steroid" element={<Steroid />} />
                 <Route path="/Immunomodulator" element={<Immunomodulator />} />
@@ -55,9 +51,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/Musclerelaxant" element={<Musclerelaxant />} />
                 <Route path="/Gout" element={<Gout />} />
                 <Route path="/Search" element={<Search />} />
-
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
         <Footer />
     </React.StrictMode>
 )

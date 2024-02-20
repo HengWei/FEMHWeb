@@ -1,7 +1,5 @@
 ﻿import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 
 import './App.css'
@@ -12,7 +10,7 @@ import './App.css'
 function App() {
     return (
         <>  
-            <Image src="./public/images/559.jpg"  fluid />
+            <Image src="/images/559.jpg"  fluid />
             <Container className="pt-4" style={{ minHeight: 300 }}>
                 <Row>
                     

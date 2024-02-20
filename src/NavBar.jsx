@@ -15,8 +15,8 @@ function NavBar() {
     const [cookies, setCookie] = useCookies(['allowCookie']);
 
     //彈跳視窗
-    //const [show, setShow] = useState(!cookies.allowCookie);
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(!cookies.allowCookie);
+    //const [show, setShow] = useState(false);
     const [queryUrl, setqueryUrl] = useState();
 
     //同意按鈕
@@ -32,7 +32,7 @@ function NavBar() {
 
     //搜尋網址
     function searchPage(q) {
-        const url = "/Search?q=";
+        const url = "#/Search?q=";
         setqueryUrl(url.concat(q));
     }
 
@@ -45,11 +45,11 @@ function NavBar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/Member">成員介紹</Nav.Link>
-                            <Nav.Link href="/symptom">常見症狀</Nav.Link>
-                            <Nav.Link href="/disease">常見疾病</Nav.Link>
-                            <Nav.Link href="/medication">常見藥物</Nav.Link>
-                            <Nav.Link href="/lab">常見檢驗</Nav.Link>
+                            <Nav.Link href="#/Member">成員介紹</Nav.Link>
+                            <Nav.Link href="#/symptom">常見症狀</Nav.Link>
+                            <Nav.Link href="#/disease">常見疾病</Nav.Link>
+                            <Nav.Link href="#/medication">常見藥物</Nav.Link>
+                            <Nav.Link href="#/lab">常見檢驗</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <Form.Control
@@ -57,7 +57,7 @@ function NavBar() {
                                 placeholder="搜尋"
                                 className="me-2"
                                 aria-label="Search"
-                                onChange={(e) => { searchPage(e.target.value); }}
+                                onChange={(e) => { searchPage(e.target.value); console.log(e.target.value); }}
                             />
                             <Button href={queryUrl} ><Search size={22}></Search></Button>
                         </Form>
