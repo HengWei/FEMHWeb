@@ -19,6 +19,7 @@
     "react-cookie": "^7.0.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
+    "react-router-hash-link": "^2.4.3",
     "universal-cookie": "^7.0.1"
   },
   "devDependencies": {

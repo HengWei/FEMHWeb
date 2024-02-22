@@ -3,7 +3,7 @@
     {
       "id": 2,
       "parent": "類固醇",
-      "url": "/Steroid",
+      "url": "#/Steroid",
       "sub": "類固醇的學名叫做『腎上腺皮質素』，正常人的腎上腺每天都會分泌一定量的類固醇來維持體內正常的生理運作，如調節血醣、蛋白質、脂肪、及電解質的代謝，它是維持生命不可或缺的重要荷爾蒙。臨床上類固醇是很好的藥物，它可被廣泛地應用於治療許多的疑難雜症，包括︰某些癌症治療或輔助治療、腦水腫、慢性肺病變、風濕病、氣喘、早產兒肺部不成熟、皮膚病、及腦膜炎治療輔助等等；而且它確實會減輕許多的症狀，使症狀得到暫時的舒解，故人們稱之美國仙丹，顧名思義它的功效非常好，像仙丹一樣，雖然如此，使用上仍有些事應特別注意。",
       "child": [
         {
@@ -22,7 +22,7 @@
       "id": 4,
       "parent": "生物製劑",
       "sub": "此類製劑通常是仿效生物分子或針對生物分子作用設計，對於一些傳統用藥無效的風濕病人有很好的效果。因為通常是大分子的蛋白質物質，因此合成困難價格昂貴。因為是大分子物質，不經過肝臟、腎臟代謝，因此代謝性的副作用較小。但是因為對免疫力有影響，因此使用時需注意避免感染。",
-      "url": "/Biologicalagents",
+      "url": "#/Biologicalagents",
       "child": [
         {
           "title": "Actemra/安挺樂 (tocilizumab)",
@@ -65,7 +65,7 @@
       "id": 3,
       "parent": "免疫調節劑",
       "sub": "是一大類藥物的總稱，也是過敏免疫風濕科最有特色的用藥，使用免疫調節劑的目的，是改變體質，以減少止痛藥及類固醇的使用量，所以一般俗稱調\"體質\"或\"保養\"的藥物。使用上雖然沒有症狀治療如止痛的效果，卻是本科最重要的用藥。一般而言，這類的藥物要達到最大效果有時要一到兩個月，所以病友除非有使用不適的情況，否則不應自行調整用量。",
-      "url": "/Immunomodulator",
+      "url": "#/Immunomodulator",
       "child": [
         {
           "title": "Sulfasalazine， 磺胺塞拉金或斯樂腸溶錠(Azulfidine)",
@@ -128,7 +128,7 @@
       "id": 1,
       "parent": "非類固醇止痛藥",
       "sub": "NSAID",
-      "url": "/Nsaid",
+      "url": "#/Nsaid",
       "child": [
         {
           "title": "Acemet",
@@ -170,7 +170,7 @@
     {
       "id": 5,
       "parent": "小分子標靶藥物",
-      "url": "/Moleculetargetdrug",
+      "url": "#/Moleculetargetdrug",
       "child": [
         {
           "title": "Tofacitinib (捷抑炎)",
@@ -189,7 +189,7 @@
     {
       "id": 6,
       "parent": "痛風用藥",
-      "url": "/Goutmedicine",
+      "url": "#/Goutmedicine",
       "child": [
         {
           "title": "Allopurinol(欣律錠)",
@@ -216,7 +216,7 @@
     {
       "id": 7,
       "parent": "骨鬆症用藥",
-      "url": "/M-Osteoporosis",
+      "url": "#/M-Osteoporosis",
       "child": [
         {
           "title": "Evista，鈣穩",
@@ -243,7 +243,7 @@
     {
       "id": 8,
       "parent": "抗過敏/抗組織胺",
-      "url": "/Antiallergy",
+      "url": "#/Antiallergy",
       "child": [
         {
           "title": "CTM，縮水蘋果酸氯菲尼拉明錠",
@@ -286,7 +286,7 @@
     {
       "id": 9,
       "parent": "肌肉鬆弛劑及其他肌肉酸痛相關用藥",
-      "url": "/Musclerelaxant",
+      "url": "#/Musclerelaxant",
       "child": [
         {
           "title": "Bafen，倍鬆錠",

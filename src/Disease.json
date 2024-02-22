@@ -8,42 +8,42 @@
         {
           "title": "痛風",
           "subTitle": "Gout",
-          "url": "/Gout"
+          "url": "#/Gout"
         },
         {
           "title": "類風濕性關節炎",
           "subTitle": "",
-          "url": ""
+          "url": "#/RA"
         },
         {
           "title": "僵直性脊椎炎",
           "subTitle": "Ankylosing spondylitis",
-          "url": ""
+          "url": "#/AS"
         },
         {
           "title": "退化性關節炎/骨性關節炎/骨刺",
           "subTitle": "osteoarthritis",
-          "url": ""
+          "url": "#/Osteoarthritis"
         },
         {
           "title": "感染性關節炎",
           "subTitle": "Septic arthritis",
-          "url": ""
+          "url": "#/SepticArthritis"
         },
         {
           "title": "乾癬性關節炎",
           "subTitle": "Psoriatic arthritis",
-          "url": ""
+          "url": "#/PsA"
         },
         {
           "title": "陣發性風濕症/遊走性關節炎",
           "subTitle": "Palidromic rheumatism",
-          "url": ""
+          "url": "#/PalidromicHeumatism"
         },
         {
           "title": "成人史迪爾氏病/成人幼年型關節炎",
           "subTitle": "Adult onset Still's disease",
-          "url": ""
+          "url": "#/AultStill"
         }
       ]
     },
@@ -55,32 +55,32 @@
         {
           "title": "全身性紅斑狼瘡",
           "subTitle": "Systemic lupus erythematosus",
-          "url": ""
+          "url": "#/SLE"
         },
         {
           "title": "修格蘭氏病/修格連氏病/乾燥症",
           "subTitle": "Sjogren's sydrome",
-          "url": ""
+          "url": "#/Sjogren"
         },
         {
           "title": "硬皮症",
           "subTitle": "Scleroderma",
-          "url": ""
+          "url": "#/Scleroderma"
         },
         {
           "title": "多發性肌炎與皮肌炎",
           "subTitle": "Polymyositis and dermatomyositis",
-          "url": ""
+          "url": "#/PolymyositisAndDermatomyositis"
         },
         {
           "title": "混合型結締組織疾病",
           "subTitle": "mixed connetive tissue disease/MCTD",
-          "url": ""
+          "url": "#/MCTD"
         },
         {
           "title": "抗磷脂抗體症候群",
           "subTitle": "antiphospholipid syndrome",
-          "url": ""
+          "url": "#/APS"
         }
       ]
     },
@@ -92,57 +92,57 @@
         {
           "title": "血管炎",
           "subTitle": "Vasculitis",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "颞動脈炎",
           "subTitle": "Temporal arteritis",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "高安氏血管炎",
           "subTitle": "Takayasu arteritis",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "肉芽腫性多血管炎/韋格納氏肉芽腫",
           "subTitle": "Granulomatosis with polyangiitis/Wegner's granulomatosis",
-          "url": ""
+          "url": "#/Wegener"
         },
         {
           "title": "顯微性多血管炎",
           "subTitle": "Microscopic polyangiitis",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "過敏性肉芽腫",
           "subTitle": "Churg-Strauss syndrome",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "節結性多動脈硬化",
           "subTitle": "Polyarteritis nodosum",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "貝賽特氏病/貝雪氏病",
           "subTitle": "Behcet's disease",
-          "url": ""
+          "url": "#/Behcet1"
         },
         {
           "title": "過敏性紫斑症",
           "subTitle": "Henoch-Scholein purpura",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "Burger's disease",
           "subTitle": "thromboangiitis obliterans",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "冷凝蛋白血症",
           "subTitle": "Cryoglobulinemia",
-          "url": ""
+          "url": "#/Vasculitis"
         }
       ]
     },
@@ -154,42 +154,52 @@
         {
           "title": "纖維肌痛",
           "subTitle": "Myofascial pain syndrome",
-          "url": ""
+          "url": "#/Fibromyalgia"
+        },
+        {
+          "title": "肌筋膜疼痛症候群",
+          "subTitle": "Myofascial pain syndrome",
+          "url": "#/MyofascialPain"
         },
         {
           "title": "骨質疏鬆",
           "subTitle": "Osteoporosis",
-          "url": ""
+          "url": "#/Osteoporosis"
         },
         {
           "title": "紅斑節結/結節性紅斑",
           "subTitle": "erythema nodosum",
-          "url": ""
+          "url": "#/ErythemaNodosum"
         },
         {
           "title": "肺動脈高血壓",
           "subTitle": "autoimmune disease associated pulmonary artery hypertension",
-          "url": ""
+          "url": "#/ADAPAH"
         },
         {
           "title": "間質性肺疾病",
           "subTitle": "interstitial lung disease/ILD",
-          "url": ""
+          "url": "#/ILD"
         },
         {
           "title": "間質性膀胱炎",
+          "subTitle": "interstitial cystitis/IC",
+          "url": "#/IC"
+        },
+        {
+          "title": "自體免疫肝炎",
           "subTitle": "autoimmune hepatitis",
-          "url": ""
+          "url": "#/AH"
         },
         {
           "title": "風濕性多發肌炎",
           "subTitle": "polymyalgia rheumatica",
-          "url": ""
+          "url": "#/Vasculitis"
         },
         {
           "title": "多發性風濕肌痛",
           "subTitle": "Polymyalgia rheumatica",
-          "url": ""
+          "url": "#/Polymyalgia"
         }
       ]
     },
@@ -201,27 +211,27 @@
         {
           "title": "過敏性鼻炎",
           "subTitle": "Allergic rhinitis",
-          "url": ""
+          "url": "#/AllergicRhinitis"
         },
         {
           "title": "氣喘",
           "subTitle": "Asthma",
-          "url": ""
+          "url": "#/Asthma"
         },
         {
           "title": "藥物過敏及不良反應",
           "subTitle": "Drug allergy/adverse drug reaction",
-          "url": ""
+          "url": "#/DrugAllergy"
         },
         {
           "title": "史蒂芬強生症候群",
           "subTitle": "Steven-Johnson syndrome",
-          "url": ""
+          "url": "#/StevenJohnsonSyndrome"
         },
         {
           "title": "急慢性蕁麻疹",
           "subTitle": "",
-          "url": ""
+          "url": "#/Urticaria"
         }
       ]
     }

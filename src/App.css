@@ -12,3 +12,11 @@ html, body {
     margin-top: 15px;   
 }
 
+p{
+    font-size:20px;
+}
+
+p > a {
+    color: #212529;
+}
+

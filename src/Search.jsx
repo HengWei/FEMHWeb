@@ -1,13 +1,18 @@
-﻿import queryString from "query-string";
-import medicationData from './Medication.json';
+﻿import medicationData from './Medication.json';
 import disease from './Disease.json';
-
 import ListGroup from 'react-bootstrap/ListGroup';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { useSearchParams } from 'react-router-dom';
 
 function Search() {
+
     let searchItem = [];
+
+    //取得網址參數
+    const [searchParams] = useSearchParams();    
+
+    const quertString = searchParams.get("q");
 
     //搜尋資料組合
     medicationData.data.map((parent, i) =>
@@ -37,12 +42,8 @@ function Search() {
         )
     )
 
-
-    //參數取得
-    const parsed = queryString.parse(window.location.search);
-
     //過濾資料
-    let result = searchItem.filter(x => x.title.includes(parsed.q));
+    let result = searchItem.filter(x => x.title.includes(quertString));
 
     //顯示內容
     let show;
@@ -58,6 +59,8 @@ function Search() {
                 </ListGroup.Item>)}
         </ListGroup>
     }
+
+    
 
     return (
         <>

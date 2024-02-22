@@ -16,8 +16,8 @@ function Footer() {
 
     const googleTranslateElementInit = () => {
         new window.google.translate.TranslateElement({
-            pageLanguage: 'pt'          
-            , includedLanguages: 'en,zh-CN,pt'
+            pageLanguage: 'zh-TW'  
+            , includedLanguages: 'zh-TW,en,zh-CN,pt'
             , autoDisplay: true
             , multilanguagePage: true
         }, 'google_translate_element')
@@ -46,7 +46,7 @@ function Footer() {
                                     <Col><Facebook size={25} /></Col>
                                 </Row>
                                 <Row>
-                                    {/*<div id="google_translate_element" />*/}
+                                    <div id="google_translate_element" />
                                 </Row>
 
                             </Container>

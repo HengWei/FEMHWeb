@@ -8,9 +8,9 @@
     background-color: #6c757d;
 }
 
-li > a {
+.list-unstyled> li > a {
     text-decoration-line: none;
-    color: #212529;   
+    color: #212529;
 }
 
 li{

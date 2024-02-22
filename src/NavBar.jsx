@@ -32,7 +32,7 @@ function NavBar() {
 
     //搜尋網址
     function searchPage(q) {
-        const url = "#/Search?q=";
+        const url = "#/Search?q=";       
         setqueryUrl(url.concat(q));
     }
 
@@ -57,7 +57,7 @@ function NavBar() {
                                 placeholder="搜尋"
                                 className="me-2"
                                 aria-label="Search"
-                                onChange={(e) => { searchPage(e.target.value); console.log(e.target.value); }}
+                                onChange={(e) => { searchPage(e.target.value) }}
                             />
                             <Button href={queryUrl} ><Search size={22}></Search></Button>
                         </Form>
