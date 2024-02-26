@@ -25,7 +25,7 @@ function Gout() {
                 <p>ANCA相關血管炎</p>
                 <ul className="disease">
                     <li>
-                        <a href="#/Wegener">肉芽腫性多血管炎/韋格納氏肉芽腫 (Granulomatosis with polyangiitis, Wegner's granulomatosis)</a>
+                        <a href="#/Wegener">肉芽腫性多血管炎/韋格納氏肉芽腫 (Granulomatosis with polyangiitis, Wegner&apos;s granulomatosis)</a>
                     </li>
 
                     <li>
@@ -42,7 +42,7 @@ function Gout() {
                         <Link to='#Polyarteritis'>節結性多動脈硬化(Polyarteritis nodosum)</Link>
                     </li>
                     <li>
-                        <a href="#/Behcet">貝賽特氏病或貝雪氏病(Behcet's disease)</a>
+                        <a href="#/Behcet">貝賽特氏病或貝雪氏病(Behcet&apos;s disease)</a>
                     </li>
                     <li>
 
@@ -52,7 +52,7 @@ function Gout() {
                         <Link to='#Purpura'>過敏性紫斑症(Henoch-Scholein purpura)</Link>
                     </li>
                     <li>
-                        <Link to='#Burger'>Burger's disease(thromboangiitis obliterans)</Link>
+                        <Link to='#Burger'>Burger&apos;s disease(thromboangiitis obliterans)</Link>
                     </li>
                 </ul>
                 <h3 id='Temporal'>颞動脈炎/巨細胞血管炎(Temporal arteritis/Giant cell arteritis)</h3>
@@ -64,7 +64,7 @@ function Gout() {
                 <p>好發於育齡(二十到四十歲)婦女的血管炎，又稱為無脈搏病，也是一種自體免疫疾病，會造成主動脈及其第一分支發炎且狹窄。通常表現為發燒與倦怠，有時會有大血管發炎造成脖子痛或單側手痠，理學檢查可發現四肢血壓不對稱或兩側脈搏強弱不一。治療須用到高劑量類固醇，有時血管狹窄部位須用手術整修以增加血流。</p>
                 <h3>ANCA相關血管炎</h3>
                 <ol className="disease">
-                    <li id="Wegener">肉芽腫性多血管炎/韋格納氏肉芽腫 (Granulomatosis with polyangiitis, Wegner's granulomatosis)<a href="#/wegener">更多</a></li>  <p>一種中小血管炎，屬於健保的重大傷病，主要以發燒、慢性鼻竇炎、咳血、血尿、周邊神經麻痛等表現。 實驗室的檢驗通常有抗嗜中性球細胞質抗體(c-ANCA or PR3-ANCA)陽性。治療通常需要類固醇以及其他免疫抑制劑</p>
+                    <li id="Wegener">肉芽腫性多血管炎/韋格納氏肉芽腫 (Granulomatosis with polyangiitis, Wegner&apos;s granulomatosis)<a href="#/wegener">更多</a></li>  <p>一種中小血管炎，屬於健保的重大傷病，主要以發燒、慢性鼻竇炎、咳血、血尿、周邊神經麻痛等表現。 實驗室的檢驗通常有抗嗜中性球細胞質抗體(c-ANCA or PR3-ANCA)陽性。治療通常需要類固醇以及其他免疫抑制劑</p>
                     <li id="polyangiitis">顯微性多血管炎(Microscopic polyangiitis)</li> <p>一種中小血管炎，主要以發燒、咳血、血尿、周邊神經麻痛等表現,與韋格納氏肉芽腫的主要差別是少見鼻竇炎。 實驗室的檢驗通常有抗嗜中性球細胞質抗體(p-ANCA or MPO-ANCA)陽性。治療通常需要類固醇以及其他免疫抑制劑。</p>
                     <li id="syndrome">過敏性肉芽腫(Churg-Strauss syndrome)</li>  <p>一種中小血管炎，主要以嗜伊紅性白血球上升，氣喘，鼻竇炎，週邊神經麻痛表現。治療通常需要類固醇以及其他免疫抑制劑。</p>
                 </ol>
@@ -72,7 +72,7 @@ function Gout() {
                 <ol>
                     <li id="Polyarteritis">節結性多動脈硬化(Polyarteritis nodosum)</li>
                     <p>一種非常罕見的中小血管炎，主要以發燒、體重下降、腹痛、血便、高血壓或腎功能異常、週邊神經病變等表現 ，病人中約有15%與B型肝炎有關。治療通常需要類固醇以及其他免疫抑制劑。</p>
-                    <li id="Behcet">貝雪氏病或貝塞特氏病(Behcet's disease)
+                    <li id="Behcet">貝雪氏病或貝塞特氏病(Behcet&apos;s disease)
                         <a href="#/behcet1">更多</a>
                     </li>
                     <p>健保的重大傷病之一。本質也是一種慢性反覆性的自體免疫的疾病，並不是傳染病，主要表現是口腔及陰部的潰瘍(男性在陰囊，女性在陰唇)。其它的併發症也包括 皮膚病變、虹彩炎、關節炎、血管病變、腸道潰瘍及肚子疼痛等。治療上可以使用免疫調節劑與類固醇。</p>
@@ -81,7 +81,7 @@ function Gout() {
                     <p>通常是C型肝炎的併發症，可能有眼乾、口乾，下肢皮疹，關節酸痛，蛋白尿等 表現，因為常常有類風濕因子的假陽性發生，所以可能被誤認為類風濕性關節炎，所以診斷類風濕性關節炎前，應詢問病人是否有肝炎家族史，以免將冷凝蛋白血症誤認為類風濕性關節炎。</p> <p>治療上可以用一些免疫調節劑，包括干擾素，此外類固醇的使用需小心，以免造成肝炎發作。</p>
                     <li id="Purpura">過敏性紫斑(Henoch-Schonlein Purpura)</li>
                     <p>一種好發在3-15歲兒童的血管炎，偶而也見於成人。主要的症狀為腹痛、關節痛與下肢的紫斑。通查在上呼吸道感染後一到兩週後發生。少數病人會有血尿與腎臟併發症。治療上可能需要到類固醇，一般為一過性的血管炎，但是少數人在減藥後有復發的可能。</p>
-                    <li id="Burger">Burger's disease (thromboangiitis obliterans)</li>
+                    <li id="Burger">Burger&apos;s disease (thromboangiitis obliterans)</li>
                     <p>一種好發在吸煙男性的血管堵塞病變，一般發病在五十歲前症狀為末梢循環堵塞，手指、腳趾末端蒼白麻木、缺血性壞死，甚至可能要截肢，唯一的改善的方法是戒菸，類固醇或其他的抗發炎藥物是無效的。</p>
                 </ol>
             </Row>

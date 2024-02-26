@@ -5,7 +5,6 @@ import Member from './Member'
 import Navbar from './NavBar'
 import Footer from './Footer'
 
-
 import DiseaseIdx from './DiseaseIdx'
 import Gout from './disease/Gout'
 import RA from './disease/RA'
