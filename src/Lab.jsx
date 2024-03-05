@@ -6,17 +6,15 @@ import Col from 'react-bootstrap/Col';
 import data from './lab.json';
 
 function Lab() {
+
     //加載症狀JSON
-    let itemAccordion = [];
-    data.data.map((item) => {
-        itemAccordion.push(
-            <Accordion.Item eventKey={item.id}>
-                <Accordion.Header>{item.title}</Accordion.Header>
-                <Accordion.Body>
-                    {item.context}
-                </Accordion.Body>
-            </Accordion.Item>
-        )
+    let itemAccordion = data.data.map(item => {
+        <Accordion.Item eventKey={item.id}>
+            <Accordion.Header>{item.title}</Accordion.Header>
+            <Accordion.Body>
+                {item.context}
+            </Accordion.Body>
+        </Accordion.Item>
     });
 
     return (
@@ -28,7 +26,7 @@ function Lab() {
             </Row>
             <Row className="mt-3">
                 <Accordion defaultActiveKey="3" >
-                    {itemAccordion}                    
+                    {itemAccordion}
                 </Accordion>
 
             </Row>

@@ -10,13 +10,13 @@ function Search() {
     let searchItem = [];
 
     //取得網址參數
-    const [searchParams] = useSearchParams();    
+    const [searchParams] = useSearchParams();
 
     const quertString = searchParams.get("q");
 
     //搜尋資料組合
-    medicationData.data.map((parent, i) =>
-        parent.child.map((child, i) =>
+    medicationData.data.map(parent =>
+        parent.child.map(child =>
             searchItem.push({
                 title: child.title,
                 url: parent.url
@@ -24,9 +24,8 @@ function Search() {
         )
     )
 
-    disease.data.map((parent, i) =>
-        parent.childs.map((child, i) => {
-
+    disease.data.map(parent =>
+        parent.childs.map(child => {
             searchItem.push({
                 title: child.title,
                 url: child.url
@@ -60,7 +59,7 @@ function Search() {
         </ListGroup>
     }
 
-    
+
 
     return (
         <>

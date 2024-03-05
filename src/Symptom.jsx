@@ -8,17 +8,14 @@ import data from './Symptom.json';
 function Symptom()
 {
     //加載症狀JSON
-    let itemAccordion = [];
-    data.data.map((item) => {
-        itemAccordion.push(
+    let itemAccordion = data.data.map(item =>         
             <Accordion.Item eventKey={item.id}>
                 <Accordion.Header>{item.title}</Accordion.Header>
                 <Accordion.Body>
                     {item.context}
                 </Accordion.Body>
-            </Accordion.Item>
-        )
-    });
+            </Accordion.Item>        
+    );
 
     return (
         <Container style={{ minHeight: 800 }} className="mt-4 mb-5" >

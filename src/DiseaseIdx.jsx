@@ -18,11 +18,8 @@ function DiseaseIdx() {
 
     const handleClose = () => setShow(false);    
 
-    let itemCard = [];
-
-    data.data.map((item) => {
-        itemCard.push(
-            <Col style={{ paddingTop: 15 }} xs={12} md={4}>
+    let itemCard = data.data.map((item,i) =>
+        <Col key={i} style={{ paddingTop: 15 }} xs={12} md={4}>
                 <Card >
                     <Card.Body>
                         <Card.Title>{item.parent}</Card.Title>
@@ -36,9 +33,8 @@ function DiseaseIdx() {
                         }}>詳細</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-        );
-    });
+            </Col>      
+    );
 
     return (
         <>
