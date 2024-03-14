@@ -7,15 +7,15 @@ import data from './lab.json';
 
 function Lab() {
 
-    //加載症狀JSON
-    let itemAccordion = data.data.map(item => {
-        <Accordion.Item eventKey={item.id}>
+    //加載症狀JSON   
+    let itemAccordion = data.data.map(item => 
+        <Accordion.Item key={item.id} eventKey={item.id}>
             <Accordion.Header>{item.title}</Accordion.Header>
             <Accordion.Body>
                 {item.context}
             </Accordion.Body>
         </Accordion.Item>
-    });
+    );
 
     return (
         <Container style={{ minHeight: 750 }} className="mt-4 mb-5" >
@@ -25,10 +25,9 @@ function Lab() {
                 </Col>
             </Row>
             <Row className="mt-3">
-                <Accordion defaultActiveKey="3" >
+                <Accordion defaultActiveKey="0" >
                     {itemAccordion}
                 </Accordion>
-
             </Row>
         </Container>
     )
