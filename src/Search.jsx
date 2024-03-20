@@ -1,9 +1,7 @@
 ﻿import medicationData from './Medication.json';
 import disease from './Disease.json';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import { useSearchParams } from 'react-router-dom';
+import { Row, List, Col } from 'antd';
 
 function Search() {
 
@@ -47,30 +45,27 @@ function Search() {
     //顯示內容
     let show;
 
+    //let result = ["123", "456"];
+
     if (result.length === 0) {
         show = <h3>查無資料</h3>
     }
     else {
-        show = <ListGroup>
-            {result.map((item, i) =>
-                <ListGroup.Item key={i} action href={item.url} >
-                    {item.title}
-                </ListGroup.Item>)}
-        </ListGroup>
+        show = <List
+            style={{ } }
+            size="small"
+            bordered
+            dataSource={result}                  
+            renderItem={(item) => <List.Item><a href={item.url}>{item.title}</a></List.Item>}
+        />
     }
 
 
 
     return (
         <>
-            <Container style={{ minHeight: 800, paddingTop: 20 }} >
-                <Row>
-                    <h1>搜尋結果</h1>
-                </Row>
-                <Row>
-                    {show}
-                </Row>
-            </Container>
+            <h1>搜尋結果</h1>
+            {show}
         </>
     );
 }

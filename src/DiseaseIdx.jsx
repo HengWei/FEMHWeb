@@ -1,12 +1,10 @@
-﻿import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+﻿
 import { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ListGroup from 'react-bootstrap/ListGroup';
 import data from './Disease.json';
+import { Button, Drawer, Radio, Space, Col, Row, Card } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
 
 function DiseaseIdx() {
 
@@ -14,50 +12,49 @@ function DiseaseIdx() {
 
     const [offTitle, setOffTitle] = useState();
 
-    const [offItem, setOffItem] = useState([]); 
+    const [offItem, setOffItem] = useState([]);
 
-    const handleClose = () => setShow(false);    
+    const handleClose = () => setShow(false);
 
-    let itemCard = data.data.map((item,i) =>
-        <Col key={i} style={{ paddingTop: 15 }} xs={12} md={4}>
-                <Card >
-                    <Card.Body>
-                        <Card.Title>{item.parent}</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">{item.sub}</Card.Subtitle>
-                        <Card.Text>
-                        </Card.Text>
-                        <Button variant="primary" onClick={() => {                                                    
+    let itemCard = data.data.map((item, i) =>
+        <Col key={i} xs={24} sm={8} md={6}>
+            <Card
+                title={item.parent}
+                bordered={true}>
+                <p>{item.sub}</p>
+                <div>
+                    <Button type="primary" icon={<SearchOutlined />}
+                        onClick={() => {
                             setOffTitle(item.parent);
-                            setOffItem(item.childs);                            
+                            setOffItem(item.childs);
                             setShow(true);
-                        }}>詳細</Button>
-                    </Card.Body>
-                </Card>
-            </Col>      
+                        }}>
+                        詳細
+                    </Button>
+                </div>
+            </Card>
+        </Col>
     );
 
     return (
         <>
-            <Container style={{ minHeight: 800, paddingTop: 20 }} >
-                <Row>
-                    {itemCard}
-                </Row>
-            </Container>
+            <Row gutter={[16, 16]}>
+                {itemCard}
+            </Row>
 
-            <Offcanvas show={show} onHide={handleClose}>                
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>{offTitle}</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <ListGroup>
-                        {offItem.map((item, i) =>
-                            <ListGroup.Item action href={item.url} key={i}>
-                                {item.title}
-                            </ListGroup.Item>)
-                        } 
-                    </ListGroup>                             
-                </Offcanvas.Body>
-            </Offcanvas>
+            <Drawer
+                title={offTitle}
+                placement="left"
+                closable={true}
+                onClose={handleClose}
+                open={show}
+            >
+                {offItem.map((item, i) =>
+                    <p key={i}><a href={item.url}>
+                        {item.title}
+                    </a>
+                    </p>)}
+            </Drawer>
         </>
     );
 }

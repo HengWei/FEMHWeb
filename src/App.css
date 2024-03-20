@@ -20,3 +20,12 @@ p > a {
     color: #212529;
 }
 
+li > a {
+    color: #212529;
+}
+
+div > a {
+    color: #212529;
+    font-weight: bold;
+}
+

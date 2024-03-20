@@ -10,13 +10,12 @@ import { Search } from 'react-bootstrap-icons';
 
 
 function NavBar() {
-
     //Cookie
     const [cookies, setCookie] = useCookies(['allowCookie']);
 
     //彈跳視窗
     const [show, setShow] = useState(!cookies.allowCookie);
-    //const [show, setShow] = useState(false);
+    
     const [queryUrl, setqueryUrl] = useState();
 
     //同意按鈕
@@ -35,7 +34,6 @@ function NavBar() {
         const url = "#/Search?q=";       
         setqueryUrl(url.concat(q));
     }
-
 
     return (
         <>
