@@ -1,8 +1,8 @@
 ﻿import medicationData from './Medication.json';
 import disease from './Disease.json';
 import { useSearchParams } from 'react-router-dom';
-import { Row, List, Col } from 'antd';
-
+import { Row, List, Col, Button, Input } from 'antd';
+import { useNavigate } from "react-router-dom"
 function Search() {
 
     let searchItem = [];
@@ -45,25 +45,39 @@ function Search() {
     //顯示內容
     let show;
 
-    //let result = ["123", "456"];
+    const navigate = useNavigate();
+
+    const { Search } = Input;
+    function goto(value) {
+        if (value) {
+            setTimeout(() => {
+                navigate("?q=" + value);
+            }, 300);
+        }
+    }
 
     if (result.length === 0) {
         show = <h3>查無資料</h3>
     }
     else {
         show = <List
-            style={{ } }
+            style={{}}
             size="small"
             bordered
-            dataSource={result}                  
+            dataSource={result}
             renderItem={(item) => <List.Item><a href={item.url}>{item.title}</a></List.Item>}
         />
     }
 
-
-
     return (
         <>
+            <Search
+                placeholder="站內搜尋"
+                allowClear
+                enterButton
+                size="large"
+                onSearch={(value) => goto(value)}
+            />
             <h1>搜尋結果</h1>
             {show}
         </>

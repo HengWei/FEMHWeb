@@ -1,14 +1,15 @@
-﻿/* eslint-disable no-undef */
+﻿/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 
 import { useState, useEffect } from 'react'
 import { useCookies } from 'react-cookie';
 import './App.css'
-import { Route, Routes, useNavigate } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 
 import { FacebookShareButton, FacebookIcon, LineShareButton, LineIcon } from 'react-share';
 
-import { Layout, Menu, Row, Col, Modal, Flex, Input, Button, QRCode } from 'antd';
+import { Layout, Menu, Row, Col, Modal, Flex, Button, QRCode } from 'antd';
 import { ShareAltOutlined, MailOutlined, LinkOutlined, QrcodeOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
@@ -66,7 +67,7 @@ import MOsteoporosis from './Medication/M-Osteoporosis'
 import Antiallergy from './Medication/Antiallergy'
 import Musclerelaxant from './Medication/Musclerelaxant'
 
-const { Search } = Input;
+
 
 
 
@@ -76,8 +77,7 @@ function App() {
     const [cookies, setCookie] = useCookies(['allowCookie']);
 
     //彈跳視窗
-    const [show, setShow] = useState(!cookies.allowCookie);
-    
+    const [show, setShow] = useState(!cookies.allowCookie);    
 
     const items = [
         {
@@ -99,6 +99,9 @@ function App() {
         }, {
             key: "Lab",
             label: <a href="/#/Lab">常見檢驗</a>
+        }, {
+            key: "Search",
+            label: <a href="/#/Search">站內搜尋</a>
         }
     ];
 
@@ -128,18 +131,8 @@ function App() {
         addScript.setAttribute('src', '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
         document.body.appendChild(addScript);
         window.googleTranslateElementInit = googleTranslateElementInit;
-    })
-
-    const navigate = useNavigate();
-
-    function goto(value) {
-        if (value) {
-            setTimeout(() => {
-                navigate("Search?q=" + value);                
-            }, 300);
-        }            
-    }
-
+    },[])
+    
 
     const info = () => {
         Modal.info({
@@ -174,20 +167,9 @@ function App() {
                         items={items}
                         defaultSelectedKeys={['Index']}
                     />
-
-                    <Search
-                        placeholder="搜尋"
-                        allowClear
-                        enterButton
-                        size="middle"
-                        style={{
-                            width:"30%"
-                        }}
-                        onSearch={(value) => goto(value)}
-                    />
                 </Header>
 
-                <Content style={{ padding: '0 50px', marginTop: 64 }}>
+                <Content style={{ padding: '0 30px', marginTop: 36 }}>
                     <div style={{ background: '#fff', padding: 24, minHeight: 480 }}>
                         <Routes>
                             <Route path="/member" element={<Member />} />
