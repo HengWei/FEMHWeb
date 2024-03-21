@@ -12,10 +12,6 @@ html, body {
     margin-top: 15px;   
 }
 
-p{
-    font-size:20px;
-}
-
 p > a {
     color: #212529;
 }
@@ -27,5 +23,11 @@ li > a {
 div > a {
     color: #212529;
     font-weight: bold;
+    font-size: 18px;
 }
 
+
+.idxContext {
+    font-size: 20px;
+    font-weight: bold;
+}
