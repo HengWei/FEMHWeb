@@ -10,7 +10,7 @@ function Search() {
     //取得網址參數
     const [searchParams] = useSearchParams();
 
-    const quertString = searchParams.get("q");
+    let quertString = searchParams.get("q");
 
     //搜尋資料組合
     medicationData.data.map(parent =>
@@ -39,8 +39,11 @@ function Search() {
         )
     )
 
+    if (quertString) {
+        quertString = quertString.toLowerCase();        
+    }
     //過濾資料
-    let result = searchItem.filter(x => x.title.includes(quertString));
+    let result = searchItem.filter(x => x.title.toLowerCase().includes(quertString));
 
     //顯示內容
     let show;
