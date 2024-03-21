@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router-dom"
 import { FacebookShareButton, FacebookIcon, LineShareButton, LineIcon } from 'react-share';
 
 import { Layout, Menu, Row, Col, Modal, Flex, Button, QRCode } from 'antd';
-import { ShareAltOutlined, MailOutlined, LinkOutlined, QrcodeOutlined } from '@ant-design/icons';
+import { ShareAltOutlined, MailOutlined, MedicineBoxOutlined, BugOutlined, LinkOutlined, FormOutlined, QrcodeOutlined, TeamOutlined, SearchOutlined, ExperimentOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
 import Member from './Member'
@@ -86,22 +86,28 @@ function App() {
         },
         {
             key: "Member",
-            label: <a href="/#/Member">成員介紹</a>
+            label: <a href="/#/Member">成員介紹</a>,
+            icon: <TeamOutlined />
         }, {
             key: "symptom",
-            label: <a href="/#/symptom">常見症狀</a>
+            label: <a href="/#/symptom">常見症狀</a>,
+            icon: <FormOutlined />
         }, {
             key: "disease",
-            label: <a href="/#/disease">常見疾病</a>
+            label: <a href="/#/disease">常見疾病</a>,
+            icon: <BugOutlined />
         }, {
             key: "medication",
-            label: <a href="/#/medication">常見藥物</a>
+            label: <a href="/#/medication">常見藥物</a>,
+            icon: <MedicineBoxOutlined />
         }, {
             key: "Lab",
-            label: <a href="/#/Lab">常見檢驗</a>
+            label: <a href="/#/Lab">常見檢驗</a>,
+            icon: <ExperimentOutlined />
         }, {
             key: "Search",
-            label: <a href="/#/Search">站內搜尋</a>
+            label: <a href="/#/Search">站內搜尋</a>,
+            icon: <SearchOutlined />
         }
     ];
 
@@ -241,7 +247,7 @@ function App() {
                                     >
                                         <LineIcon size={32} round />
                                     </LineShareButton>
-                                    <Button onClick={info} icon={<QrcodeOutlined style={{ fontSize: '25px' }} />}></Button>
+                                    <Button type="text" onClick={info} icon={<QrcodeOutlined style={{ fontSize: '25px' }} />}></Button>
                                 </Flex>
                                 <div id="google_translate_element" />
                             </Flex>
